@@ -30,7 +30,7 @@ body {
     color:var(--primary-text-color) ;
     font-family: Roboto, sans-serif;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
 }
                   
 
@@ -58,6 +58,8 @@ body {
     line-height: 1.14;
     text-decoration: none;
 }
+ 
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -68,18 +70,17 @@ body {
     list-style: none;
 }
 
-
-/* contacts */
-.address {
-  display: block;
-  font-style: italic;
+.site-nav .active a {
+    color: var(--accent-color);
 }
 
-.contact-link{
+/* contacts */
+
+.contact-link {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;  
+    line-height: 1.14;  
     text-decoration: none;
 }
 
@@ -92,7 +93,7 @@ body {
     color: var(--primary-white-color);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,7;
+    line-height: 1.7;
     text-decoration: none;
 }
 
@@ -100,7 +101,7 @@ body {
     color: var(--primary-transparent-color);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1,7;  
+    line-height: 1.7;  
     text-decoration: none;
 }
 
@@ -116,6 +117,7 @@ body {
 
 .contacts-list {
     list-style: none;
+    font-style: normal;
 }
 
 
@@ -128,23 +130,23 @@ body {
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
+    line-height: 1.36;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* section */
 
-.work-features >a :active,
-a :hover,
-a {
+.work-features :hover,
+.work-features :focus {
     text-decoration: none;
-} 
+}
 
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,17;
+    line-height: 1.17;
     text-align: center;
 }
 
@@ -152,7 +154,7 @@ a {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 
@@ -160,7 +162,7 @@ a {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,19;
+    line-height: 1.19;
     text-align: center;
 }
 
@@ -174,14 +176,14 @@ a {
 
 .text-title {
     font-size: 16px;
-    line-height: 1,19;
+    line-height: 1.19;
     text-align: center;
 }
 
 .features-title {
     color: var(--primary-text-color);
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     text-decoration: none;
 }
 
@@ -215,14 +217,19 @@ a {
 
 /* button */
 
-.button-subject:active {
-    color: var(--primary-white-color);
+.button-subject {
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     text-decoration: none;
     cursor: pointer;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
 }
+
 
 .button-subject:hover,
 .button-subject:focus {
@@ -236,18 +243,30 @@ a {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,6;
+    line-height: 1.6;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
 }
 
-.section-buttons {
-    list-style: none;
-}
 
 .section-buttons-button :hover,
 .section-buttons-button :focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     cursor: pointer;
+}
+
+.section-buttons .section-buttons-button {
+   color: var(--primary-black-color); 
+}
+
+.section-buttons .section-buttons-button :hover,
+.section-buttons .section-buttons-button :focus {
+    color: var(--primary-white-color);
+}
+
+
+.section-buttons {
+    list-style: none;
 }

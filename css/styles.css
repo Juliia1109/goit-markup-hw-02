@@ -193,6 +193,10 @@ body {
     list-style: none;
 }
 
+li a {
+    text-decoration: none;
+}
+
 
 /* footer */
 
@@ -239,7 +243,7 @@ body {
 }
 
 
-.section-buttons-button {
+/* .section-buttons-button {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -247,25 +251,26 @@ body {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+} */
+
+.button-button {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
 }
 
-
-.section-buttons-button :hover,
-.section-buttons-button :focus {
+.button-button:hover,
+.button-button:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     cursor: pointer;
 }
-
-.section-buttons .section-buttons-button {
-   color: var(--primary-black-color); 
-}
-
-.section-buttons .section-buttons-button :hover,
-.section-buttons .section-buttons-button :focus {
-    color: var(--primary-white-color);
-}
-
 
 .section-buttons {
     list-style: none;
